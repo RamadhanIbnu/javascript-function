@@ -91,10 +91,33 @@ Gunakan single line block function
 Output adalah string yang telah diubah formatnya menjadi lower case
 
 Gunakan built in method string */
+let changeString = word => word.toLowerCase();
+
+function tampilkan(check){
+    if (check === false){
+        return alert("terimakasih, sampai jumpa!")
+    }
+
+    let input = prompt("masukan kata yang ingin diubah: ");
+    
+    alert(changeString(input)+ " <= telah diubah menjadi lower case.");
+    
+    return tampilkan(check=confirm("apakah anda ingin lanjut?"));
+}
+
+console.log(tampilkan())
 
 
 
+/*
+Soal No.5
 
+Buat tampilan untuk seluruh soal diatas. Buat sekreatif teman-teman. 1 soal = 1 fitur = 1 page.
+
+JAWAB
+
+Semua soal diatas sudah diberikan tampilan, baik itu berupa alert, inputan menggunakan prompt, serta confirm dari user.
+*/
 
 
 
