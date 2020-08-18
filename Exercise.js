@@ -16,9 +16,7 @@ function greet(nama,produk){
 
 let nama = prompt("masukan nama anda: ");
 let produk = prompt("masukan nama produk yang akan dibeli: ");
-let sapa = greet(nama, produk);
-
-console.log(sapa);
+console.log(greet(nama, produk));
 
 /*
 Soal No.2
@@ -38,9 +36,8 @@ function getCelcius(fahrenheit){
 }
 
 let suhu = parseInt(prompt("masukan suhu Celcius yang ingin anda konversikan: "));
-let hasil = alert(suhu+ " Celcius adalah " +getCelcius(suhu)+ " fahrenheit.");
+console.log(alert(suhu+ " Celcius adalah " +getCelcius(suhu)+ " fahrenheit."));
 
-console.log(hasil)
 
 /*
 Soal No.3
@@ -56,6 +53,46 @@ kucing saat ini 4 tahun berarti dalam kalendar tahun kucing, umurnya adalah 32 t
 
 Buat sebuah ARROW function yang menerima parameter umur kucing berdasarkan perhitungan tahun
 manusia. */
+function moreAge(age){
+
+    if (age >= 3){
+        let sumAge = 24 + ((age-2) * 4);
+
+        return sumAge;
+    }
+}
+
+let convertAge = catAge =>{
+
+    if (catAge === 1){
+        return 15 ;
+    }
+        else if(catAge === 2){
+            return 24 ;
+        }
+    else{
+        return moreAge(catAge);
+    }
+
+};
+
+let inputAge = parseInt(prompt("masukan umur kucing"));
+console.log(alert(inputAge+ " tahun kucing adalah " + convertAge(inputAge) + " tahun umur manusia."));
+
+/*
+Soal No.4
+
+Buat sebuah function untuk mengubah format semua string menjadi huruf kecil.
+
+Menerima 1 parameter string
+
+Gunakan single line block function
+
+Output adalah string yang telah diubah formatnya menjadi lower case
+
+Gunakan built in method string */
+
+
 
 
 
