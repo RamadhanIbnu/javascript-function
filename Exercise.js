@@ -36,7 +36,7 @@ function getCelcius(fahrenheit){
 }
 
 let suhu = parseInt(prompt("masukan suhu Celcius yang ingin anda konversikan: "));
-console.log(alert(suhu+ " Celcius adalah " +getCelcius(suhu)+ " fahrenheit."));
+console.log(alert(suhu+ " Fahrenheit adalah " +getCelcius(suhu)+ " Celcius."));
 
 
 /*
